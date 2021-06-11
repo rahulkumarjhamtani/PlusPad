@@ -16,6 +16,7 @@ t=tkinter.Text(top,height=100,width=100)
 t.insert("1.0","Enter name of your file with extention in next line")
 t.tag_add("start", '1.0', '1.60')
 t.tag_config("start",foreground="red")
+t.configure(font=("", 20))
 
 menubar=tkinter.Menu(top)
 
@@ -72,7 +73,6 @@ def font():
     menubar.add_cascade(label="Font",menu=item2)
 
 
-    t.configure(font=("", 20))
 def size():
     def _10():
         fontsize=10
